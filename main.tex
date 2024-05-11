@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{commentgreen}{RGB}{2,112,10}
+\definecolor{eminence}{RGB}{108,48,130}
+\definecolor{weborange}{RGB}{255,165,0}
+\definecolor{frenchplum}{RGB}{129,20,83}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.96}
+
+\title{code listing}
+\author{sachin rawat}
+\date{May 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\lstset{
+backgroundcolor = \color{backcolour},
+commentstyle = \color{commentgreen},
+keywordstyle = \color{weborange},
+stringstyle = \color{eminence}
+}
+
+\lstinputlisting[language=Python,caption=code listing,frame = single, numbers = left,label = {lst:code}]{source_code.py}
+
+
+\end{document}
